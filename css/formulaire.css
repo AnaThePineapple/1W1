@@ -1,0 +1,38 @@
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #faedeb;
+  width: 75%;
+}
+
+.formulaire label {
+  margin: 10px 0 0 0;
+}
+
+.formulaire label,
+.formulaire input {
+  width: 200px;
+}
+
+.boutons {
+  text-align: center;
+}
+.boutons input {
+  background-color: #407144;
+  color: #faedeb;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+
+.formulaire #notif {
+  display: flex;
+  align-items: center;
+
+  margin: 10px;
+}

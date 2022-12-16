@@ -1,0 +1,400 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tp2-etape-1</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/formulaire.css" />
+    <link rel="stylesheet" href="css/tableau.css" />
+    <link rel="stylesheet" href="css/articles.css" />
+    <link rel="stylesheet" href="css/video.css" />
+    <link rel="stylesheet" href="css/galerie.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- /////////////////////////////////////////////////// menu  -->
+
+    <input type="checkbox" name="chk-burger" id="chk-burger" />
+    <label for="chk-burger" id="burger"
+      ><img
+        src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=fff"
+        width="64"
+        height="64"
+        alt="menu burger"
+    /></label>
+    <nav class="menu">
+      <a href="#accueil">Accueil</a>
+      <a href="#inscription">Inscription</a>
+      <a href="#tableau">Tableau</a>
+      <a href="#articles">Articles</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#video">Vidéo</a>
+    </nav>
+    <!-- /////////////////////////////////////////////////// accueil  -->
+    <section id="accueil">
+      <h1>TP2</h1>
+      <h2>Zoothérapie Par les Poules</h2>
+      <h3>Autrice: Anastasia Poissant Ross</h3>
+      <p>
+        1W1-Mise en page Web - technique d'intégration multimédia - Collège de
+        Maisonneuve
+      </p>
+      <p>Automne 2022</p>
+    </section>
+    <!-- /////////////////////////////////////////////////// inscription  -->
+    <section id="inscription">
+      <form class="formulaire">
+        <h1>Inscription</h1>
+        <label for="txt_courriel">Votre courriel</label>
+        <input
+          type="email"
+          name="txt_courriel"
+          id="txt_courriel"
+          placeholder="exemple@courriel.com"
+        />
+
+        <label for="txt_pseudo">Pseudo</label>
+        <input
+          type="text"
+          name="txt_pseudo"
+          id="txt_pseudo"
+          placeholder="Pseudo"
+        />
+
+        <label for="txt_motDePasse">Mot de Passe</label>
+        <input
+          type="password"
+          name="txt_motDePasse"
+          id="txt_motDePasse"
+          placeholder="Mot de Passe"
+        />
+
+        <label for="dateDeNaissance">Date de naissance</label>
+        <input type="date" name="dateDeNaissance" id="dateDeNaissance" />
+
+        <label for="txt_prenom">Votre prénom</label>
+        <input
+          type="text"
+          name="txt_prenom"
+          id="txt_prenom"
+          placeholder="Prénom"
+        />
+
+        <label for="txt_nom">Votre nom</label>
+        <input type="text" name="txt_nom" id="txt_nom" placeholder="Nom" />
+
+        <label for="chk_notif" id="notif"
+          >je souhaite recevoir des offres et evenemenents par courriel<input
+            type="checkbox"
+            name="chk_notif"
+            id="chk_notif"
+          />
+        </label>
+        <div class="boutons">
+          <input type="reset" />
+          <input type="submit" />
+        </div>
+      </form>
+    </section>
+
+    <!-- /////////////////////////////////////////////////// tableau  -->
+    <section id="tableau">
+      <!-- table>(tr>(td>lorem2)*3)*4 -->
+      <table class="mon_tableau">
+        <caption>
+          <h1>Présentation des Artistes</h1>
+        </caption>
+        <!-- (tr>(th>lorem2)*3) -->
+        <thead class="tbl_header">
+          <tr>
+            <th colspan="4">Nos Poules d'Amour</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="sous_titre">
+            <th>Nom</th>
+            <th>Age</th>
+            <th>Race</th>
+            <th>Image</th>
+          </tr>
+          <tr>
+            <td>Cocotte</td>
+            <td>4 ans</td>
+            <td>Poule Pékin</td>
+            <td>
+              <img
+                src="images/pekin-600x450.png"
+                alt="Cocotte et son poussin"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Ginette</td>
+            <td>7 ans</td>
+            <td>poule Hollandaise huppée</td>
+            <td><img src="images/hollandaise-600x450.png" alt="" /></td>
+          </tr>
+          <tr>
+            <td>Doucette</td>
+            <td>3 ans</td>
+            <td>Poule Brahma</td>
+            <td><img src="images/brahma-600x450.png" alt="" /></td>
+          </tr>
+          <tr>
+            <td>Boris</td>
+            <td>35 ans</td>
+            <td>poule Padoue</td>
+            <td><img src="images/padoue-600x450.png" alt="" /></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4"><a href="#tableau">Visiter la liste coplète</a></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <!-- /////////////////////////////////////////////////// articles  -->
+    <section id="articles">
+      <h1>Commentaires des clients</h1>
+      <section class="contenu">
+        <!--  (article.principal>((section>(h1>lorem3)+(p>lorem))+figure>(img[src="images/img_$.jpg"]+figcaption>lorem3)))*5 -->
+        <div>
+          <article class="commentaires">
+            <section class="texte">
+              <h1>Ce service a littéralement changé ma vie!</h1>
+              <h2>Écrit par Yvettre St-Jeans</h2>
+              <p>
+                Pendant des années, j'ai souffert d'une phobie incontrolable des
+                animeaux de la ferme, mais grâce a l'accompagnement EXEPTIONNEL
+                des membres du centre et le travail des formidables animeaux,
+                j'ai pu combattre ma peur et je vis maintenant sur une ferme
+                sans avoir a me soucier de m'evanouir a la vue d'un animal. Quel
+                Bonheur!
+              </p>
+            </section>
+            <figure>
+              <img
+                src="images/yvettreEtLesPoules.jpg"
+                alt="Yvettre avec ses nouveaux amis de la ferme"
+              />
+              <figcaption>
+                Yvettre avec ses nouveaux amis de la ferme
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="commentaires">
+            <section class="texte">
+              <h1>Mon fils est sauvé! merci mille fois!</h1>
+              <h2>Écrit par Monique Rochette, mère de Timmien</h2>
+              <p>
+                Après son service dans les forces armées américaines, mon petit
+                Timien d'amour souffrait de syndrome de stress post-traumatique.
+                Le psychologue qui le suit a proposé la zoothérapie et après
+                quelques sessions, je vois déja une nette amélioration! Timmy a
+                finalement réussi à cesser de se cacher sous les tables quand la
+                cloche sonne à l'école
+              </p>
+            </section>
+            <figure>
+              <img
+                src="images/Timien.jpg"
+                alt="Timien qui regarde un poussin"
+              />
+              <figcaption>moment doux avec un poussin</figcaption>
+            </figure>
+          </article>
+          <article class="commentaires">
+            <section class="texte">
+              <h1>Je me sens moins seul maintenant</h1>
+              <h2>Écrit par Marc-En-Ciel Piché</h2>
+              <p>
+                À 96 ans, après la mort de ma bien aimée, je suis tombé en
+                dépression et me suis isolé dans mon domicile Pendant des mois.
+                quand j'ai vu les annonces dans le journal, j'étais sceptique,
+                mais j'ai décidé de l'essayer. Quelle bonne décision! Quelle
+                réjoissance de pouvoir sentir la proximité d'un animal si
+                charmant que cet oiseau qu'est la poule!
+              </p>
+            </section>
+            <figure>
+              <img
+                src="images/Marc-en-ciel.png"
+                alt="Marc-en-ciel en compagnie de Clarence la poule"
+              />
+              <figcaption>
+                Marc-En-Ciel appréciant la compagnie de Clarence
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+        <div>
+          <article class="commentaires">
+            <section class="texte">
+              <h1>
+                Un grand merci de la part du centre de personnes agées l'age
+                d'or!
+              </h1>
+              <h2>Écrit par Monique Richard</h2>
+              <p>
+                Merci aux moniteurs du centre de s'être déplacés pour venir
+                rencontrer les locataires! Les usagers étaient aux anges! Une
+                équipe sympathique et des animeaux charmants! Ce serait un
+                plaisir de répeter l'activité au futur!
+              </p>
+            </section>
+            <figure>
+              <img src="images/ageOr.jpg" alt="Gérard avec 2 poules" />
+              <figcaption>Une belle activité enrichissante!</figcaption>
+            </figure>
+          </article>
+          <article class="commentaires">
+            <section class="texte">
+              <h1>
+                J'ai réussi à surmonter mes problèmes de colère grâce à vous
+              </h1>
+              <h2>Écrit par Sébastien Coté</h2>
+              <p>
+                Avant de commencer la thérapie, je souffrais de violents
+                problèmes à controler mes émotions, particulièrement ma colère.
+                Avec la participation conjointe de mon psychologue et des
+                oiseau, j'ai pu me permettre de m'ouvrir a mes propres
+                sentiments. Aujourd'hui je vais immensément mieux et c'est en
+                grande part grace à vous!
+              </p>
+            </section>
+            <figure>
+              <img
+                src="images/colère.jpg"
+                alt="un homme avec une poule sur ses genoux"
+              />
+              <figcaption>
+                Je me sentais tellement apaisé à ce moment
+              </figcaption>
+            </figure>
+          </article>
+          <article class="commentaires">
+            <section class="texte">
+              <h1>
+                Merci à la collaboration du centre dans nos experimentations
+              </h1>
+              <h2>Écrit par [Redacted]</h2>
+              <p>
+                La collaboration du centre a été un élément crucial à l'avancée
+                du projet [Redacted]. Voici la seule photo que le bureau de
+                recherche] nous a permis de sortir au public. (Nous tennons a
+                rappeler que les rumeurs assumant que le gouvernement crée des
+                enfants aux pouvoirs psychiques sont COMPLÈTEMENT NON FONDÉES)
+              </p>
+            </section>
+            <figure>
+              <img src="images/[Redacted].jpg" alt="[Redacted]" />
+              <figcaption>Rien d'anormal ici</figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- /////////////////////////////////////////////////// galerie  -->
+    <section id="galerie">
+      <h1>Galerie</h1>
+      <figure class="fig_galerie">
+        <figure>
+          <img src="images/img_1.jpg" alt="" />
+          <figcaption>Un plan général de la ferme du centre</figcaption>
+        </figure>
+        <figure>
+          <img src="images/img_2.jpg" alt="" />
+          <figcaption>Une de nos poules sortant de son poulailler</figcaption>
+        </figure>
+        <figure>
+          <img src="images/img_3.jpg" alt="" />
+          <figcaption>Une poule couvant ses oeuf</figcaption>
+        </figure>
+        <figure>
+          <img src="images/img_4.jpg" alt="" />
+          <figcaption>3 de nos beaux amours!</figcaption>
+        </figure>
+        <figure>
+          <img src="images/img_5.jpg" alt="" />
+          <figcaption>Nos beaux oiseaux qui mangent!</figcaption>
+        </figure>
+      </figure>
+    </section>
+    <!-- /////////////////////////////////////////////////// video  -->
+    <section id="video">
+      <h1>Vidéo</h1>
+      <div class="youtube">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/1A4V6kccQdA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/lYNBDdc9YEo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section id="footer">
+      <h1>pied de page</h1>
+      <div>
+        <dl class="contact">
+          <dt>Zoothérapie par les poules</dt>
+          <dd>
+            <img
+              src="https://s2.svgbox.net/hero-solid.svg?ic=phone&color=fff"
+              width="16"
+              height="16"
+              alt="téléphone"
+            />
+            514 933-0711
+          </dd>
+          <dd>
+            <img
+              src="https://s2.svgbox.net/materialui.svg?ic=home&color=fff"
+              width="16"
+              height="16"
+              alt="maison"
+            />
+            3800 Rue Sherbrooke
+          </dd>
+          <dd class="adresse">Montréal, QC h2S 2L7</dd>
+        </dl>
+        <dl class="liens">
+          <dt>Médias sociaux</dt>
+          <dd>
+            <a href=""><img src="images/facebook_32.png" alt="facebook" /></a>
+            <a href=""><img src="images/instagram_32.png" alt="instagram" /></a>
+            <a href=""><img src="images/youtube_32.png" alt="youtube" /></a>
+          </dd>
+        </dl>
+        <dl class="recherche">
+          <dt>Recherche</dt>
+          <dd>
+            <form class="">
+              <input type="search" placeholder="Rechercher..." />
+              <img
+                src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=666"
+                width="16"
+                height="16"
+                alt="loupe"/>
+      </div>
+    </section>
+  </body>
+</html>

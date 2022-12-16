@@ -1,0 +1,144 @@
+html {
+  scroll-behavior: smooth;
+  color: #2f3e46;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+  margin: 0;
+}
+
+/*/////////////////////////////////////////////// Les sections de la page*/
+#accueil,
+#inscription,
+#tableau,
+#articles,
+#galerie,
+#evenement,
+#video,
+#footer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*////////////////////////// accueil/////////////////////*/
+#accueil {
+  background-color: #faedeb;
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+}
+#accueil p {
+  text-align: center;
+}
+#inscription {
+  background-color: #407144;
+}
+#tableau {
+  background-color: #faedeb;
+}
+
+#galerie {
+  background-color: #faedeb;
+}
+#evenement {
+  background-color: #faedeb;
+}
+#video {
+  background-color: #faedeb;
+}
+
+/* ////////////////////////////////////////////// */
+#footer {
+  background-color: rgb(0, 0, 0);
+}
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px, 2px, 4px, #aaa;
+  padding: 1rem;
+}
+/*/ //////////////////////////////////////////////////////////////////////////////////////////////*/
+/*
+Menu principal du site
+On utilise un positionnement fixe pour que le menu reste en haut de chacune des sections
+*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #570805;
+  width: auto;
+  font-size: 1.5rem;
+  padding: 80px 20px 1rem 10px;
+  /*transformations*/
+  transform: translate(-100vw);
+  transition: transform 0.5s;
+  border-end-end-radius: 14px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0px 10px 20px;
+  /*transformations*/
+  transform: scale(1);
+  transition: transform, 0.5s;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+}
+nav a:active {
+  color: #2f3e46;
+}
+/*//////////////////////////////// interactibilité //////////////////////////////*/
+#chk-burger {
+  display: none;
+}
+#chk-burger:checked ~ #burger img {
+  transform: rotate(90deg);
+}
+#chk-burger:checked ~ .menu {
+  transform: translate(0);
+}
+#burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #570805;
+  border-end-end-radius: 14px;
+  padding: 10px;
+}
+#burger img {
+  /*transformarions*/
+  transform: rotate(0deg);
+  transition: transform 0.25s;
+}
+
+/*/////////////////////////////////////// footer ///////////////////////*/
+#footer {
+  color: #faedeb;
+  display: flex;
+  justify-content: space-around;
+}
+#footer div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+div dd {
+  margin-inline-start: 0;
+}
+
+#footer div dl {
+  display: flex;
+  flex-direction: column;
+}

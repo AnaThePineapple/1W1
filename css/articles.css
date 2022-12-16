@@ -1,0 +1,46 @@
+#articles {
+  background-color: #faedeb;
+  flex-wrap: wrap;
+}
+
+#articles .contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 15%;
+}
+
+#articles section div {
+  flex: 0 0 400px;
+}
+.commentaires {
+  border: 2px solid #407144;
+  /*Flexbox*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px;
+  border-radius: 10px;
+}
+.commentaires .texte {
+  padding: 10px;
+  /*flexbox*/
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.commentaires h1 {
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.commentaires h2 {
+  font-size: 1.1rem;
+  color: #686a6b;
+}
+
+.commentaires figure figcaption {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
