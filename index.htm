@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -161,7 +161,7 @@
     <section id="articles">
       <h1>Commentaires des clients</h1>
       <section class="contenu">
-        <!--  (article.principal>((section>(h1>lorem3)+(p>lorem))+figure>(img[src="images/img_$.jpg"]+figcaption>lorem3)))*5 -->
+        <!--  (article.principal>((section>(h1>lorem3)+(h2>lorem2)+(p>lorem))+figure>(img[src="images/img_$.jpg"]+figcaption>lorem3)))*6 -->
         <div>
           <article class="commentaires">
             <section class="texte">
@@ -292,7 +292,7 @@
               </p>
             </section>
             <figure>
-              <img src="images/[Redacted].jpg" alt="[Redacted]" />
+              <img src="images/Redacted.jpg" alt="[Redacted]" />
               <figcaption>Rien d'anormal ici</figcaption>
             </figure>
           </article>
@@ -335,7 +335,6 @@
           height="315"
           src="https://www.youtube.com/embed/1A4V6kccQdA"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
@@ -345,7 +344,6 @@
           height="315"
           src="https://www.youtube.com/embed/lYNBDdc9YEo"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
@@ -374,7 +372,7 @@
             />
             3800 Rue Sherbrooke
           </dd>
-          <dd class="adresse">Montréal, QC h2S 2L7</dd>
+          <dd class="adresse">&nbsp;&nbsp;&nbsp; Montréal, QC h2S 2L7</dd>
         </dl>
         <dl class="liens">
           <dt>Médias sociaux</dt>
@@ -387,14 +385,26 @@
         <dl class="recherche">
           <dt>Recherche</dt>
           <dd>
-            <form class="">
-              <input type="search" placeholder="Rechercher..." />
+            <form>
+              <input type="search" placeholder="Recherche" />
               <img
                 src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=666"
                 width="16"
                 height="16"
-                alt="loupe"/>
+                alt="loupe"
+              />
+            </form>
+          </dd>
+        </dl>
+        <dl class="description">
+          <dt>Description du départements</dt>
+          <dd>
+            Le TIM est un progromme tehcnique qui vise a enseigner l'integration
+            et la création informatique dans plusieurs facettes du domaine
+          </dd>
+        </dl>
       </div>
+      <p>Avis de confidentialité | Privacy Notice</p>
     </section>
   </body>
 </html>

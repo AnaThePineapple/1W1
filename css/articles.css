@@ -7,11 +7,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px 15%;
+  width: 70%;
 }
 
 #articles section div {
-  flex: 0 0 400px;
+  flex: 0 1 400px;
 }
 .commentaires {
   border: 2px solid #407144;

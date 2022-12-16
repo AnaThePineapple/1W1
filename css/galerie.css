@@ -2,8 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+}
+
+#galerie .fig_galerie figure {
+  display: flex;
+  flex-direction: column;
 }
 
 .fig_galerie figcaption {

@@ -132,13 +132,36 @@ nav a:active {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+div dt {
+  font-size: 1.2rem;
 }
 
 div dd {
-  margin-inline-start: 0;
+  font-size: 0.9rem;
 }
 
 #footer div dl {
   display: flex;
   flex-direction: column;
+}
+
+#footer a {
+  padding: 0px 10px;
+}
+
+div .liens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div .liens dd,
+div .recherche dd,
+div .description dd {
+  margin-inline-start: 0;
+}
+
+div .description {
+  width: 200px;
 }
