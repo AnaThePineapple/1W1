@@ -7,6 +7,8 @@ body {
 }
 h1 {
   margin: 0;
+  font-size: 4rem;
+  padding: 1rem;
 }
 
 /*/////////////////////////////////////////////// Les sections de la page*/
@@ -26,13 +28,38 @@ h1 {
 }
 /*////////////////////////// accueil/////////////////////*/
 #accueil {
-  background-color: #faedeb;
+  background-color: #c9bcba;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   color: rgb(0, 0, 0);
+}
+
+#accueil .entete {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100vw;
+  background-color: #570805;
+  color: #faedeb;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 20px 0px;
+}
+#accueil .presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  background-color: #faedeb;
+  border-radius: 30px;
+  border: 2px solid #570805;
 }
 #accueil p {
   text-align: center;
+}
+#accueil a {
+  color: #407144;
 }
 #inscription {
   background-color: #407144;
@@ -52,14 +79,7 @@ h1 {
 }
 
 /* ////////////////////////////////////////////// */
-#footer {
-  background-color: rgb(0, 0, 0);
-}
-h1 {
-  font-size: 3rem;
-  text-shadow: 2px, 2px, 4px, #aaa;
-  padding: 1rem;
-}
+
 /*/ //////////////////////////////////////////////////////////////////////////////////////////////*/
 /*
 Menu principal du site
@@ -76,13 +96,14 @@ nav {
   width: auto;
   font-size: 1.5rem;
   padding: 80px 20px 1rem 10px;
+  z-index: 1;
   /*transformations*/
   transform: translate(-100vw);
   transition: transform 0.5s;
   border-end-end-radius: 14px;
 }
 nav a {
-  color: white;
+  color: #faedeb;
   text-decoration: none;
   display: inline-block;
   margin: 10px 0px 10px 20px;
@@ -90,13 +111,10 @@ nav a {
   transform: scale(1);
   transition: transform, 0.5s;
 }
-
 nav a:hover {
   transform: scale(1.2);
 }
-nav a:active {
-  color: #2f3e46;
-}
+
 /*//////////////////////////////// interactibilité //////////////////////////////*/
 #chk-burger {
   display: none;
@@ -107,11 +125,12 @@ nav a:active {
 #chk-burger:checked ~ .menu {
   transform: translate(0);
 }
+
 #burger {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: #570805;
   border-end-end-radius: 14px;
   padding: 10px;
@@ -124,6 +143,7 @@ nav a:active {
 
 /*/////////////////////////////////////// footer ///////////////////////*/
 #footer {
+  background-color: rgb(0, 0, 0);
   color: #faedeb;
   display: flex;
   justify-content: space-around;
@@ -134,12 +154,15 @@ nav a:active {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-div dt {
+#footer div dt {
   font-size: 1.2rem;
 }
 
-div dd {
+#footer div dd {
   font-size: 0.9rem;
+}
+#footer div dd a {
+  color: #faedeb;
 }
 
 #footer div dl {
@@ -151,17 +174,17 @@ div dd {
   padding: 0px 10px;
 }
 
-div .liens {
+#footer div .liens {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-div .liens dd,
-div .recherche dd,
-div .description dd {
+#footer div .liens dd,
+#footer div .recherche dd,
+#footer div .description dd {
   margin-inline-start: 0;
 }
 
-div .description {
+#footer div .description {
   width: 200px;
 }

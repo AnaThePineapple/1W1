@@ -24,6 +24,7 @@
         height="64"
         alt="menu burger"
     /></label>
+
     <nav class="menu">
       <a href="#accueil">Accueil</a>
       <a href="#inscription">Inscription</a>
@@ -34,14 +35,27 @@
     </nav>
     <!-- /////////////////////////////////////////////////// accueil  -->
     <section id="accueil">
-      <h1>TP2</h1>
-      <h2>Zoothérapie Par les Poules</h2>
-      <h3>Autrice: Anastasia Poissant Ross</h3>
-      <p>
-        1W1-Mise en page Web - technique d'intégration multimédia - Collège de
-        Maisonneuve
-      </p>
-      <p>Automne 2022</p>
+      <!-- entête -->
+
+      <section class="entete">
+        <img src="images/logoPoules.png" alt="Logo" />
+        <h1>Scéances Poules</h1>
+      </section>
+      <!-- texte de présentation -->
+      <section class="presentation">
+        <h1>TP2</h1>
+        <h2>Zoothérapie Par les Poules</h2>
+        <h3>Autrice: Anastasia Poissant Ross</h3>
+        <p>
+          1W1-Mise en page Web - technique d'intégration multimédia - Collège de
+          Maisonneuve
+        </p>
+        <p>Automne 2022</p>
+        <a href=" https://anathepineapple.github.io/1W1/"
+          >Lien Vers la page gitHub</a
+        >
+      </section>
+      <section></section>
     </section>
     <!-- /////////////////////////////////////////////////// inscription  -->
     <section id="inscription">
@@ -92,6 +106,7 @@
             id="chk_notif"
           />
         </label>
+        <!-- boutons pour reinitialiser/envoyer -->
         <div class="boutons">
           <input type="reset" />
           <input type="submit" />
@@ -106,7 +121,6 @@
         <caption>
           <h1>Présentation des Artistes</h1>
         </caption>
-        <!-- (tr>(th>lorem2)*3) -->
         <thead class="tbl_header">
           <tr>
             <th colspan="4">Nos Poules d'Amour</th>
@@ -125,34 +139,43 @@
             <td>4 ans</td>
             <td>Poule Pékin</td>
             <td>
-              <img
-                src="images/pekin-600x450.png"
-                alt="Cocotte et son poussin"
-              />
+              <img src="images/pekin_600x450.png" alt="Poule pékin" />
             </td>
           </tr>
           <tr>
             <td>Ginette</td>
             <td>7 ans</td>
             <td>poule Hollandaise huppée</td>
-            <td><img src="images/hollandaise-600x450.png" alt="" /></td>
+            <td>
+              <img
+                src="images/hollandaise_600x450.png"
+                alt="Poule Hollandaise"
+              />
+            </td>
           </tr>
           <tr>
             <td>Doucette</td>
             <td>3 ans</td>
             <td>Poule Brahma</td>
-            <td><img src="images/brahma-600x450.png" alt="" /></td>
+            <td><img src="images/brahma_600x450.png" alt="Poule Brahma" /></td>
           </tr>
           <tr>
             <td>Boris</td>
             <td>35 ans</td>
             <td>poule Padoue</td>
-            <td><img src="images/padoue-600x450.png" alt="" /></td>
+            <td><img src="images/padoue_600x450.png" alt="Poule Padoue" /></td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
-            <td colspan="4"><a href="#tableau">Visiter la liste coplète</a></td>
+            <td colspan="4">
+              <a href="#tableau"
+                >Visiter la liste coplète<img
+                  src="https://s2.svgbox.net/hero-solid.svg?ic=arrow-right&color=faedeb"
+                  width="16"
+                  height="16"
+              /></a>
+            </td>
           </tr>
         </tfoot>
       </table>
@@ -161,7 +184,7 @@
     <section id="articles">
       <h1>Commentaires des clients</h1>
       <section class="contenu">
-        <!--  (article.principal>((section>(h1>lorem3)+(h2>lorem2)+(p>lorem))+figure>(img[src="images/img_$.jpg"]+figcaption>lorem3)))*6 -->
+        <!-- (div>article>(section>(h1+h2+p)+figure>(img+figcaption))*3)*2  -->
         <div>
           <article class="commentaires">
             <section class="texte">
@@ -202,7 +225,7 @@
             </section>
             <figure>
               <img
-                src="images/Timien.jpg"
+                src="images/timien.jpg"
                 alt="Timien qui regarde un poussin"
               />
               <figcaption>moment doux avec un poussin</figcaption>
@@ -223,7 +246,7 @@
             </section>
             <figure>
               <img
-                src="images/Marc-en-ciel.png"
+                src="images/marc_en_ciel.png"
                 alt="Marc-en-ciel en compagnie de Clarence la poule"
               />
               <figcaption>
@@ -292,7 +315,7 @@
               </p>
             </section>
             <figure>
-              <img src="images/Redacted.jpg" alt="[Redacted]" />
+              <img src="images/redacted.jpg" alt="[Redacted]" />
               <figcaption>Rien d'anormal ici</figcaption>
             </figure>
           </article>
@@ -328,7 +351,7 @@
     </section>
     <!-- /////////////////////////////////////////////////// video  -->
     <section id="video">
-      <h1>Vidéo</h1>
+      <h1>Vidéos</h1>
       <div class="youtube">
         <iframe
           width="560"
@@ -350,7 +373,6 @@
       </div>
     </section>
     <section id="footer">
-      <h1>pied de page</h1>
       <div>
         <dl class="contact">
           <dt>Zoothérapie par les poules</dt>
@@ -382,25 +404,94 @@
             <a href=""><img src="images/youtube_32.png" alt="youtube" /></a>
           </dd>
         </dl>
-        <dl class="recherche">
-          <dt>Recherche</dt>
-          <dd>
-            <form>
-              <input type="search" placeholder="Recherche" />
-              <img
-                src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=666"
-                width="16"
-                height="16"
-                alt="loupe"
-              />
-            </form>
-          </dd>
-        </dl>
         <dl class="description">
           <dt>Description du départements</dt>
           <dd>
             Le TIM est un progromme tehcnique qui vise a enseigner l'integration
             et la création informatique dans plusieurs facettes du domaine
+          </dd>
+        </dl>
+        <!--sources des images utilisées-->
+        <dl class="sources">
+          <dt>Sources photos</dt>
+          <dd>
+            <a
+              href="https://www.mpadeco.com/resize/500x500/zc/2/f/0/src/sites/mpadeco/files/products/12569.png"
+              >Logo</a
+            >
+          </dd>
+          <dd>
+            <a
+              href="https://www.regal-basse-cour.com/conseils/top-des-10-races-de-poules-les-plus-tendances-du-moment/"
+              >Photos Tableau</a
+            >
+          </dd>
+          <dt>Photos Artiles</dt>
+          <!--sources des Images des Articles-->
+          <dd>
+            <a
+              href="https://www.journaldechambly.com/quand-les-poules-auront-des-stethoscopes/"
+              >Photo Yvettre</a
+            >
+          </dd>
+          <dd>
+            <a href="http://www.ma-basse-cour.com/zootherapie-par-les-poules/"
+              >Photo Timien</a
+            >
+          </dd>
+          <dd>
+            <a
+              href="https://lafermepacifique.fr/index.php/la-ferme-pacifique/ferme-therapeutique/"
+              >Photo Marc-en-Ciel</a
+            >
+          </dd>
+          <dd>
+            <a
+              href="https://www.vosgesmatin.fr/culture-loisirs/2021/07/26/la-zootherapie-apporte-de-la-douceur-aux-aines"
+              >Photo Age d'or</a
+            >
+          </dd>
+          <dd>
+            <a
+              href="https://ici.radio-canada.ca/tele/les-poilus/site/segments/chronique/407984/lysmata-amboine-aquariums-parasites-poissons"
+              >Photo Colère</a
+            >
+          </dd>
+          <dd>
+            <a
+              href="https://www.fonds-chuga.fr/actualite/une-seance-de-mediation-animale-a-lhopital-couple-enfants/"
+              >Photo redacted</a
+            >
+          </dd>
+          <!--photos galerie-->
+          <dt>Galerie</dt>
+          <dd>
+            <a
+              href="https://www.deniau.fr/deniau-construction-batiment_batiments-avicoles-delevage_batiment-pondeuse-plein-air_construction-de-batiment-avicole-poules-pondeuses-plein-air-30-000-poules_288.phtml"
+              >photo 1</a
+            >
+          </dd>
+          <dd>
+            <a href="https://www.pinterest.com/pin/119204721376199475/"
+              >photo 2</a
+            >
+          </dd>
+          <dd>
+            <a href="https://boule-de-poil.fr/combien-de-temps-couve-une-poule/"
+              >photo 3</a
+            >
+          </dd>
+          <dd>
+            <a
+              href="https://www.animal-valley.com/francais/guide-animaux/quelles-races-de-poules-ornement-choisir/"
+              >photo 4</a
+            >
+          </dd>
+          <dd>
+            <a
+              href="https://blog.fermedebeaumont.com/vacances-de-vos-poules-545.html"
+              >photo 5</a
+            >
           </dd>
         </dl>
       </div>

@@ -4,10 +4,11 @@
 }
 
 #articles .contenu {
+  width: 70%;
+  /*flexbox*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 70%;
 }
 
 #articles section div {
@@ -22,6 +23,7 @@
   margin: 10px;
   border-radius: 10px;
 }
+/*parametres texte*/
 .commentaires .texte {
   padding: 10px;
   /*flexbox*/
@@ -39,8 +41,10 @@
   color: #686a6b;
 }
 
+/*parametres images*/
 .commentaires figure figcaption {
+  font-style: italic;
+  /*flexbox*/
   display: flex;
   justify-content: center;
-  font-style: italic;
 }

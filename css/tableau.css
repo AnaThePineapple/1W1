@@ -1,7 +1,7 @@
 .mon_tableau {
   border-collapse: collapse;
 }
-
+/*En tete,sous titres et footer*/
 .tbl_header,
 .sous_titre,
 tfoot {
@@ -11,37 +11,34 @@ tfoot {
 .mon_tableau .tbl_header {
   background-color: #631d1a;
 }
+
 .mon_tableau td,
 .mon_tableau th {
   border: 1px solid #555;
   padding: 25px;
-  font-size: 1rem;
 }
-
 .mon_tableau th {
   font-size: 1.2rem;
-  /* pour rendre le fond plus foncé */
-  background-color: rgba(0, 0, 0, 0.1);
-
-  /*
-  pour rendre le noir plus pâle 
-   background-color: rgba(255, 255, 255, 0.1);
-  */
 }
+.mon_tableau .sous_titre {
+  background-color: #634847;
+}
+.mon_tableau td {
+  font-size: 1rem;
+}
+/*images*/
 .mon_tableau tr img {
   width: 300px;
 }
 
-.mon_tableau .sous_titre {
-  background-color: #634847;
-}
+/*permet de mettre 1 colone/2 plus foncée*/
 .mon_tableau tbody tr td:nth-of-type(even) {
   background-color: rgb(255, 255, 255);
 }
 .mon_tableau tbody tr td:nth-of-type(odd) {
   background-color: rgb(241, 241, 241);
 }
-
+/*footer*/
 .mon_tableau tfoot {
   background-color: #517253;
   text-align: center;
@@ -51,6 +48,11 @@ tfoot {
 .mon_tableau tfoot a {
   text-decoration: none;
   color: #faedeb;
+}
+.mon_tableau tfoot a img {
+  display: inline;
+  width: auto;
+  padding: 0px 3px;
 }
 
 .mon_tableau tfoot a:hover {

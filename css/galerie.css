@@ -6,6 +6,9 @@
   align-items: center;
 }
 
+.fig_galerie {
+  width: 80%;
+}
 #galerie .fig_galerie figure {
   display: flex;
   flex-direction: column;
@@ -17,9 +20,11 @@
 #galerie img {
   border-radius: 10px;
   transform: scale(1);
+
   transition: transform, 1s;
 }
+/*animation quand on passe sur une image avec la sourie*/
 #galerie img:hover {
-  transform: scale(2);
-  z-index: 1;
+  transform: scale(1.5);
+  z-index: 3;
 }
